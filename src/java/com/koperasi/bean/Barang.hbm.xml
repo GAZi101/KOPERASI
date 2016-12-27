@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 23, 2016 4:28:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.koperasi.bean.Barang" table="barang" catalog="koperasi" optimistic-lock="version">
+        <id name="kdBarang" type="string">
+            <column name="kd_barang" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="namaBarang" type="string">
+            <column name="nama_barang" length="50" />
+        </property>
+        <property name="harga" type="java.lang.Long">
+            <column name="harga" precision="10" scale="0" />
+        </property>
+        <property name="jumlah" type="string">
+            <column name="jumlah" length="5" />
+        </property>
+    </class>
+</hibernate-mapping>

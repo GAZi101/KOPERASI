@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 23, 2016 4:28:24 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.koperasi.bean.Pelanggan" table="pelanggan" catalog="koperasi" optimistic-lock="version">
+        <id name="nipe" type="string">
+            <column name="nipe" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="100" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="150" />
+        </property>
+        <property name="jenkel" type="string">
+            <column name="jenkel" length="20" />
+        </property>
+        <property name="tgllahir" type="string">
+            <column name="tgllahir" />
+        </property>
+        <property name="agama" type="string">
+            <column name="agama" length="10" />
+        </property>
+        <property name="telp" type="string">
+            <column name="telp" length="13" />
+        </property>
+    </class>
+</hibernate-mapping>
